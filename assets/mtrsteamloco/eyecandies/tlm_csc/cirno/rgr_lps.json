@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_cirno": {
+        "name": "[Rigel] [TLM CSC] Cirno",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'cirno/cirno.obj'",
+            "const MODEL_NAME = 'Cirno'",
+            "const LORES = ['At Scarlet Mansion Station, 5 youkai boarded the train.', 'At Ostania Station, 2 youkai got off the train.', 'How many youkai is still on the train?', '', 'Zero! Because we are not in Gensokyo!']",
+            "const LORE_COLOR = 'AQUA'",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_ibuki_suika": {
+        "name": "[Rigel] [TLM CSC] Ibuki Suika",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'ibuki_suika/ibuki_suika.obj'",
+            "const MODEL_NAME = 'Suika Ibuki'",
+            "const LORES = null",
+            "const LORE_COLOR = 'GOLD'",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

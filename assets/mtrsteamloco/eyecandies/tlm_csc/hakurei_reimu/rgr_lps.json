@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_hakurei_reimu": {
+        "name": "[Rigel] [TLM CSC] Hakurei Reimu",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'hakurei_reimu/hakurei_reimu.obj'",
+            "const MODEL_NAME = 'Reimu Hakurei'",
+            "const LORES = ['I feel like I get more visitors here than my shrine...']",
+            "const LORE_COLOR = 'RED'",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

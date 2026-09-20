@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_yukari_yakumo": {
+        "name": "[Rigel] [TLM CSC] Yukari Yakumo",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'yukari_yakumo/yukari_yakumo.obj'",
+            "const MODEL_NAME = 'Yukari Yakumo'",
+            "const LORES = null",
+            "const LORE_COLOR = 'YELLOW'",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

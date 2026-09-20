@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_izayoi_sakuya": {
+        "name": "[Rigel] [TLM CSC] Izayoi Sakuya",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'izayoi_sakuya/izayoi_sakuya.obj'",
+            "const MODEL_NAME = 'Sakuya Izayoi'",
+            "const LORES = null",
+            "const LORE_COLOR = 'WHITE'",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_hinanawi_tenshi": {
+        "name": "[Rigel] [TLM CSC] Hinanawi Tenshi",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'hinanawi_tenshi/hinanawi_tenshi.obj'",
+            "const MODEL_NAME = 'Tenshi Hinanawi'",
+            "const LORES = null",
+            "const LORE_COLOR = 0xAABBFF",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

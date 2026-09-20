@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_wriggle_nightbug": {
+        "name": "[Rigel] [TLM CSC] Wriggle Nightbug",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'wriggle_nightbug/wriggle_nightbug.obj'",
+            "const MODEL_NAME = 'Wriggle Nightbug'",
+            "const LORES = ['', 'Paper Box?']",
+            "const LORE_COLOR = 0xB9CA9D",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

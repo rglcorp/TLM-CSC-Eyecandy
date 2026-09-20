@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_patchouli_knowledge_2": {
+        "name": "[Rigel] [TLM CSC] Patchouli Knowledge 2",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'patchouli_knowledge_2/patchouli_knowledge_2.obj'",
+            "const MODEL_NAME = 'Patchouli Knowledge'",
+            "const LORES = null",
+            "const LORE_COLOR = 0xCA99E3",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

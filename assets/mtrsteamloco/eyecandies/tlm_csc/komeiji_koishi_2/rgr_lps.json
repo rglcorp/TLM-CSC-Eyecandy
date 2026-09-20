@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_komeiji_koishi_2": {
+        "name": "[Rigel] [TLM CSC] Komeiji Koishi 2",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'komeiji_koishi_2/komeiji_koishi_2.obj'",
+            "const MODEL_NAME = 'Koishi Komeiji'",
+            "const LORES = ['', 'They once named a line after me...', 'It never saw the light of day.']",
+            "const LORE_COLOR = 0x88DD88",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

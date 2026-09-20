@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_chen": {
+        "name": "[Rigel] [TLM CSC] Chen",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'chen/chen.obj'",
+            "const MODEL_NAME = 'Chen'",
+            "const LORES = null",
+            "const LORE_COLOR = 'GOLD'",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

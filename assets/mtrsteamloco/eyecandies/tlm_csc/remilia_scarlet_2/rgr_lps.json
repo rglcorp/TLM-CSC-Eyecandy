@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_remilia_scarlet_2": {
+        "name": "[Rigel] [TLM CSC] Remilia Scarlet 2",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'remilia_scarlet_2/remilia_scarlet_2.obj'",
+            "const MODEL_NAME = 'Remilia Scarlet'",
+            "const LORES = null",
+            "const LORE_COLOR = 0xCBC4E0",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

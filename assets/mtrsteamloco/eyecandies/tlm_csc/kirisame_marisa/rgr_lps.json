@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_kirisame_marisa": {
+        "name": "[Rigel] [TLM CSC] Kirisame Marisa",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'kirisame_marisa/kirisame_marisa.obj'",
+            "const MODEL_NAME = 'Marisa Kirisame'",
+            "const LORES = null",
+            "const LORE_COLOR = 'YELLOW'",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

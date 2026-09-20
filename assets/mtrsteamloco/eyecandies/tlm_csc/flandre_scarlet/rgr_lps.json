@@ -1,0 +1,15 @@
+{
+    "rigel_tlm_csc_eyecandy_flandre_scarlet": {
+        "name": "[Rigel] [TLM CSC] Flandre Scarlet",
+        "scriptFiles": ["mtrsteamloco:eyecandies/rgl_pack/rids.js", "mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'flandre_scarlet/flandre_scarlet.obj'",
+            "const MODEL_NAME = 'Flandre Scarlet'",
+            "const LORES = null",
+            "const LORE_COLOR = 'YELLOW'",
+            "function getStaNameFunc() { return RIDS.getEnglish }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

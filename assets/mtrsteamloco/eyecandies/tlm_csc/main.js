@@ -1,7 +1,7 @@
 // Input: MODEL, MODEL_NAME, LORES, LORE_COLOR, getStaNameFunc, getTransformLoreFunc
 
 const models = ModelManager.loadPartedRawModel(Resources.manager(), Resources.idr(MODEL), null);
-const DETECT_RADIUS = 2.5;
+const DETECT_RADIUS = 3;
 
 const rawModels = {
     "head": new RawModel(),

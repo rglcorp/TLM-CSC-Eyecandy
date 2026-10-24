@@ -1,4 +1,5 @@
 // Input: MODEL, MODEL_NAME, LORES, LORE_COLOR, getStaNameFunc, getTransformLoreFunc
+const MODEL_ID = Resources.idr(MODEL);
 
 if(typeof IS_MTR4 === 'undefined') {
     IS_MTR4 = Resources.getMTRVersion().startsWith("4");
@@ -16,46 +17,58 @@ const ANIM_DURATION = 6.15;
 const toStaNameFunc = getStaNameFunc();
 const translationFunc = getTransformLoreFunc() == null ? (e) => e : getTransformLoreFunc();
 
-const models = ModelManager.loadPartedRawModel(Resources.manager(), Resources.idr(MODEL), null);
-
-const rawModels = {
-    "head": new RawModel(),
-    "body": new RawModel(),
-    "blink": new RawModel(),
-    "sin": new RawModel(),
-    "cos": new RawModel(),
-}
-
-for(let entry of models.entrySet()) {
-    let modelKey = entry.getKey();
-    let model = entry.getValue();
-    model.applyUVMirror(false, true);
-    
-    if(modelKey.startsWith("head") || modelKey.startsWith("hat") || modelKey.startsWith("hair") || modelKey.startsWith("horn")) {
-        rawModels["head"].append(model);
-    } else if(modelKey.startsWith("blink")) {
-        rawModels["blink"].append(model);
-    } else if(modelKey.startsWith("sin")) {
-        rawModels["sin"].append(model);
-    } else if(modelKey.startsWith("cos")) {
-        rawModels["cos"].append(model);
-    } else {
-        rawModels["body"].append(model);
-    }
-}
+let uploaded = false;
 
 const uploadedModels = {
-    "head": ModelManager.uploadVertArrays(rawModels["head"]),
-    "body": ModelManager.uploadVertArrays(rawModels["body"]),
-    "sin": ModelManager.uploadVertArrays(rawModels["sin"]),
-    "cos": ModelManager.uploadVertArrays(rawModels["cos"]),
-    "blink": ModelManager.uploadVertArrays(rawModels["blink"])
+    "head": new DynamicModelHolder(),
+    "body": new DynamicModelHolder(),
+    "sin": new DynamicModelHolder(),
+    "cos": new DynamicModelHolder(),
+    "blink": new DynamicModelHolder()
+}
+
+function doLateModelLoading() {
+    if(uploaded) return;
+    
+    const models = ModelManager.loadPartedRawModel(Resources.manager(), MODEL_ID, null);
+    
+    const rawModels = {
+        "head": new RawModel(),
+        "body": new RawModel(),
+        "blink": new RawModel(),
+        "sin": new RawModel(),
+        "cos": new RawModel(),
+    }
+    
+    for(let entry of models.entrySet()) {
+        let modelKey = entry.getKey();
+        let model = entry.getValue();
+        model.applyUVMirror(false, true);
+        
+        if(modelKey.startsWith("head") || modelKey.startsWith("hat") || modelKey.startsWith("hair") || modelKey.startsWith("horn")) {
+            rawModels["head"].append(model);
+        } else if(modelKey.startsWith("blink")) {
+            rawModels["blink"].append(model);
+        } else if(modelKey.startsWith("sin")) {
+            rawModels["sin"].append(model);
+        } else if(modelKey.startsWith("cos")) {
+            rawModels["cos"].append(model);
+        } else {
+            rawModels["body"].append(model);
+        }
+    }
+    
+    for(let key in uploadedModels) {
+        uploadedModels[key].uploadLater(rawModels[key]);
+    }
+    uploaded = true;
 }
 
 function create(ctx, state, eyecandy) {
     state.wiggleTimer = 0;
     state.greeted = false;
     state.greeting_cooldown = 0;
+    doLateModelLoading();
 }
 
 function render(ctx, state, eyecandy) {

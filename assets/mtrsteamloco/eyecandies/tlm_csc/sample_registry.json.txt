@@ -1,0 +1,15 @@
+{
+    "COMPANY_NAME_tlm_csc_eyecandy_yukari_yakumo": {
+        "name": "[COMPANY NAME] [TLM CSC] Yukari Yakumo",
+        "scriptFiles": ["mtrsteamloco:eyecandies/tlm_csc/main.js"],
+        "scriptTexts": [
+            "const MODEL = 'yukari_yakumo/yukari_yakumo.obj'",
+            "const MODEL_NAME = 'Yukari Yakumo'",
+            "const LORES = ['Hello World!', 'Line 2']",
+            "const LORE_COLOR = 'YELLOW'",
+            "function getStaNameFunc() { return TextUtil.getNonCjkParts }",
+            "function getTransformLoreFunc(e) { return e }"
+        ],
+        "flipV": true
+    }
+}

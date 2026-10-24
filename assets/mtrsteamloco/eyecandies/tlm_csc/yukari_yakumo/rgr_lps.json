@@ -7,6 +7,7 @@
             "const MODEL_NAME = 'Yukari Yakumo'",
             "const LORES = null",
             "const LORE_COLOR = 'YELLOW'",
+            "const SHUTUP = true",
             "function getStaNameFunc() { return RIDS.getEnglish }",
             "function getTransformLoreFunc(e) { return e }"
         ],

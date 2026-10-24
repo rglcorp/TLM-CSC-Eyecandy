@@ -5,8 +5,8 @@
         "scriptTexts": [
             "const MODEL = 'hong_meiling/hong_meiling.obj'",
             "const MODEL_NAME = 'Hong Meiling'",
-            "const LORES = null",
-            "const LORE_COLOR = 'YELLOW'",
+            "const LORES = ['', 'This is work-in-progress, you shall not trespass beyond this area.']",
+            "const LORE_COLOR = 0xFF91A0",
             "function getStaNameFunc() { return RIDS.getEnglish }",
             "function getTransformLoreFunc(e) { return e }"
         ],
